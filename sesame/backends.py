@@ -97,7 +97,7 @@ class ModelBackend(UrlAuthBackendMixin, auth_backends.ModelBackend):
     Authenticates against a token containing a signed user id.
 
     """
-    def authenticate(self, request, url_auth_token=None):
+    def authenticate(self, url_auth_token=None):
         """
         Check the token and return the corresponding user.
 
